@@ -1,0 +1,25 @@
+@import 'abstracts/animations';
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utilities';
+
+@import 'layout/structure';
+
+@import 'layout/contact';
+@import 'layout/dashboard';
+@import 'layout/footer';
+@import 'layout/header';
+@import 'layout/projects';
+@import 'layout/skills';
+@import 'layout/workflow';
+
+@import 'components/buttons';
+@import 'components/chart';
+@import 'components/form';
+@import 'components/lines';
+@import 'components/project-card';
+@import 'components/tags';
+@import 'components/workflow-card';

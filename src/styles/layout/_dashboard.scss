@@ -1,0 +1,138 @@
+.dashboard {
+    margin-top: 7.2rem; // Header height
+    background: linear-gradient(90deg, var(--color-blue-4) 50%,#fff 0);
+    overflow: hidden;
+
+    @include media(75em) {
+        background: var(--color-blue-4);
+    }
+
+    &__container {
+        position: relative;
+        background-color: var(--color-blue-4);
+        padding-top: var(--padding-vertical--small);
+        padding-bottom: var(--padding-vertical--small);
+        display: flex;
+
+        // 1540        
+        @include media(96.25em) {
+            padding-top: 8rem;
+            padding-bottom: 8rem;
+        }
+        // 1200
+        @include media(75em) {
+            background: url('./../../images/dashboard-min.png') no-repeat;
+            background-position: right 45%;
+            background-size: 60%;
+            padding: 6rem 3rem;
+        }
+        // 800
+        @include media(50em) {
+            background: none;
+        }
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: 4rem;
+            height: 4rem;
+            background-color: var(--color-blue-4);
+            border-bottom-right-radius: 10rem;
+            bottom: 0;
+            right: calc(15.5rem);
+            z-index: 10;
+        }
+
+        &::after {
+            position: absolute;
+            content: '';
+            width: 4rem;
+            height: 4rem;
+            background-color: var(--color-white);
+            bottom: 0;
+            right: calc(15.5rem);
+            z-index: 9;
+        }
+
+        &::before,
+        &::after {
+            // 1200
+            @include media(75em) {
+                content: none;
+            }
+        }
+    }
+
+    &__white-bar {
+        position: absolute;
+        background-color: var(--color-white);
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: calc(15.5rem); // 14 width + 1.5 padding
+
+        @include media(75em) {
+            display: none;
+        }
+    }
+
+    &__text-box {
+        position: relative;
+        flex: 0 1 50%;
+        padding-left: 5rem;
+
+        @include media(75em) {
+            flex-basis: 55rem;
+        }
+
+        @include media(50em) {
+            flex-basis: 100%;
+        }
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 1px;
+            background-color: var(--color-blue-3);
+            top: 4rem;
+            bottom: 4rem;
+            left: 0;
+        }
+    }
+
+    &__image-box {
+        position: relative;
+        flex: 0 1 50%;
+        z-index: 20;
+
+        @include media(75em) {
+            display: none;
+        }
+    }
+    
+    &__text {
+        width: 65%;
+    }
+    
+    &__image {
+        position: absolute;
+        top: -2rem;
+        left: 0;
+        width: 80rem;
+        max-width: 80rem; // bc this inherits 100% from img tag
+
+        // 1640
+        @include media(96.25em) {
+            top: 0;
+            width: 70rem;
+            max-width: 70rem;
+        }
+        // 1200
+        @include media(75em) {
+            display: none;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
