@@ -16,12 +16,12 @@ Install all dependences
 npm install
 ```
 
-Run webpack-dev-server with
+Run webpack-dev-server
 ```
 npm run start
 ```
 
-Or build the project with
+Build the project
 ```
 npm run build
 ```
