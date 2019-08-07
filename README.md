@@ -1,4 +1,4 @@
-## Project no.1 - Portfolio (CodersCrew)
+## Project 1 - Portfolio (CodersCrew)
 
 GitHub Pages [live version](https://marcincyboran.github.io/portfolio/)
 
