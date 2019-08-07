@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="./../images/favicon.ico">
+  <link rel="shortcut icon" href="public/images/favicon.ico">
   <title>Portfolio - Marcin Cyboran</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800&display=swap&subset=latin-ext" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
@@ -12,7 +12,9 @@
 
   <header class="header">
     <div class="container header__container">
-      <div class="header__logo">&lt;idk&gt;</div>
+      <div class="header__logo">
+        <a href="#dashboard" class="header__logo-link">&lt; logo &gt;</a>
+      </div>
       <input class="header__switcher" type="checkbox" id="menu-switcher">
       <nav class="main-nav">
         <ul class="main-nav__list">
@@ -40,7 +42,7 @@
 
   <main>
 
-    <section class="dashboard">
+    <section class="dashboard" id="dashboard">
       <div class="container dashboard__container">
           <span class="dashboard__white-bar">&nbsp;</span>
           <div class="dashboard__text-box">
@@ -49,7 +51,6 @@
               Zostań na chwilę <br/>i posłuchaj
             </h1>
             <hr class="line">
-            <!-- Load semi-bold open sans here -->
             <p class="dashboard__text paragraph paragraph--subtle-blue paragraph--small paragraph--bold">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 <br><br>
@@ -58,8 +59,7 @@
             <p class="fake-tag">&lt; / introduction &gt;</p>
           </div>
           <div class="dashboard__image-box">
-            <!-- RESPONSIVE IMG -->
-            <img class="dashboard__image"  src="./../images/dashboard-min.png" alt="Web design & web developer graphic">
+            <img class="dashboard__image"  src="public/images/dashboard-min.png" alt="Web design & web developer graphic">
           </img>
       </div>
     </section>
@@ -73,21 +73,21 @@
             <article class="workflow-card">
               <h3 class="heading-secondary workflow-card__title">Design a project</h3>
               <span class="workflow-card__divider"></span>
-              <img class="workflow-card__image" src="./../images/design-min.png" alt="Design a project">
+              <img class="workflow-card__image" src="public/images/design-min.png" alt="Design a project">
               <p class="paragraph text-center workflow-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </article>
 
             <article class="workflow-card">
               <h3 class="heading-secondary workflow-card__title">Code all features</h3>
               <span class="workflow-card__divider"></span>
-              <img class="workflow-card__image" src="./../images/code-min.png" alt="Design a project">
+              <img class="workflow-card__image" src="public/images/code-min.png" alt="Design a project">
               <p class="paragraph text-center workflow-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </article>
 
             <article class="workflow-card">
               <h3 class="heading-secondary workflow-card__title">Enjoy the product</h3>
               <span class="workflow-card__divider"></span>
-              <img class="workflow-card__image" src="./../images/enjoy-min.png" alt="Design a project">
+              <img class="workflow-card__image" src="public/images/enjoy-min.png" alt="Design a project">
               <p class="paragraph text-center workflow-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </article> 
 
@@ -133,62 +133,59 @@
       <div class="container projects__container">
         <h2 class="heading-primary heading-primary--center heading-primary--section">Projects<span class="heading-primary__line"></span></h2>
         <div class="projects__wrapper">
-          <article class="project-card project-card--1-1of3">
+          <article class="project-card">
             <picture class="project-card__image">
               <source 
-                srcset="./../images/tnt-min.png 1x, ./../images/tnt@2x-min.png 2x"
+                srcset="public/images/tnt-min.png 1x, public/images/tnt@2x-min.png 2x"
                 media="(max-width: 50em)">
-                <img srcset="./../images/tnt-min.png 1x, ./../images/tnt@2x-min.png 2x" alt="Testenatestera project image">
+                <img srcset="public/images/tnt-min.png 1x, public/images/tnt@2x-min.png 2x" alt="Test na testera">
             </picture>
             <div class="project-card__description">
                <h3 class="heading-tertiary">Test na testera</h3>
                <span class="project-card__divider">&nbsp;</span>
-               <p class="paragraph paragraph--small project-card__description-text">Single page application that introduces to the test world and provides a predisposition test.</p>
+               <p class="paragraph paragraph--small project-card__description-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem temporibus magni apque.</p>
                <div class="tags">
                  <span class="tags__element">Angular</span>
-                 <span class="tags__element">RWD</span>
+                 <span class="tags__element">BEM</span>
+                 <span class="tags__element">In-progress</span>
                </div>
             </div>
+            <a href="//marcincyboran.github.io/tnt/" target="_blank" rel="nofollow" class="project-card__live link">live</a>
           </article>
-          <article class="project-card project-card--1-2of3">
-            <picture class="project-card__image">
-              <source 
-                srcset="./../images/tnt-min.png 1x, ./../images/tnt@2x-min.png 2x"
-                media="(max-width: 50em)">
-                <img srcset="./../images/tnt-min.png 1x, ./../images/tnt@2x-min.png 2x" alt="Testenatestera project image">
-            </picture>
+          <article class="project-card">
+            <img class="project-card__image" src="public/images/portfolio.png" alt="Portfolio old">
             <div class="project-card__description">
-                <h3 class="heading-tertiary">Test na testera</h3>
+                <h3 class="heading-tertiary">Portfolio - old</h3>
                 <span class="project-card__divider">&nbsp;</span>
-                <p class="paragraph paragraph--small project-card__description-text">Single page application that introduces to the test world and provides a predisposition test.</p>
-                <div class="tags">
-                  <span class="tags__element">Node.js</span>
-                  <span class="tags__element">Express.js</span>
-                </div>
-            </div>
-          </article>
-          <article class="project-card project-card--1-3of3">
-            <picture class="project-card__image">
-              <source 
-                srcset="./../images/tnt-min.png 1x, ./../images/tnt@2x-min.png 2x"
-                media="(max-width: 50em)">
-                <img srcset="./../images/tnt-min.png 1x, ./../images/tnt@2x-min.png 2x" alt="Testenatestera project image">
-            </picture>
-            <!-- <img 
-              srcset="./../images/tnt-min.png 350w, ./../images/tnt@2x-min.png 700w"
-              sizes="(max-width: 50em) 70vw, (max-width: 56,25em) 30vw, (max-width: 75em) 26vw"
-              alt="Testenatestera project image"> -->
-            <div class="project-card__description">
-                <h3 class="heading-tertiary">Test na testera</h3>
-                <span class="project-card__divider">&nbsp;</span>
-                <p class="paragraph paragraph--small project-card__description-text">Single page application that introduces to the test world and provides a predisposition test.</p>
+                <p class="paragraph paragraph--small project-card__description-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem temporibus magni aperiam voluptate id minima quam quas. Reprehenderit magnam repellendus modi ea assumenda nobis corrupti explicabo ut? Mollitia, dicta similique.</p>
                 <div class="tags">
                   <span class="tags__element">Angular</span>
                   <span class="tags__element">RWD</span>
-                  <span class="tags__element">Node.js</span>
-                  <span class="tags__element">Express.js</span>
+                  <span class="tags__element">TypeScript</span>
+                  <span class="tags__element">Firebase</span>
+                  <span class="tags__element">mLab</span>
+                  <span class="tags__element">Maps</span>
                 </div>
             </div>
+            <a href="//portfolio-auth.firebaseapp.com/" target="_blank" rel="nofollow" class="project-card__live link">live</a>
+          </article>
+          <article class="project-card">
+            <img class="project-card__image" src="public/images/cyberforces.png" alt="Cyberforces site">
+            <!-- <img 
+              srcset="public/images/tnt-min.png 350w, public/images/tnt@2x-min.png 700w"
+              sizes="(max-width: 50em) 70vw, (max-width: 56,25em) 30vw, (max-width: 75em) 26vw"
+              alt="Testenatestera project image"> -->
+            <div class="project-card__description">
+                <h3 class="heading-tertiary">CyberForces</h3>
+                <span class="project-card__divider">&nbsp;</span>
+                <p class="paragraph paragraph--small project-card__description-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem temporibus magni aperiam voluptate. Reprehenderit magnam repellendus modi ea assumenda nobis corrupti explicabo ut? Mollitia, dicta similique.</p>
+                <div class="tags">
+                  <span class="tags__element">WordPress</span>
+                  <span class="tags__element">RWD</span>
+                  <span class="tags__element">BEM</span>
+                </div>
+            </div>
+            <a href="//cyberforces.com/" target="_blank" rel="nofollow" class="project-card__live link">live</a>
           </article>
         </div>    
       </div>

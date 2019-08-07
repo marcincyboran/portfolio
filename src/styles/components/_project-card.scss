@@ -16,9 +16,28 @@
         max-width: 70rem;
     }
 
+    &__live {
+        display: inline-block;
+        position: absolute;
+        top: 0rem;
+        transform: translateY(-100%);
+        right: 1.6rem;
+        font-size: 1.2rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: .4rem 1.2rem;
+        background-color: var(--color-white);
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .6s ease-in;
+    }
+
     &__image {
         border-radius: var(--border-radius--small);
         width: 100%;
+        box-shadow: 0 0 4px var(--color-blue-1);
         
         img {
             width: 100%;
@@ -97,6 +116,9 @@
             transform: none;
         }
     }
-}
 
-// Marcin Ty downie, zrób to po staremu czyli wszystkie elementy na flexie itp, niech się same ustawiają, a description absolutnie na dole i niech się samo pokazuje odpowiednio, dodaj odpowiednie bordery bez góry, na hover pousuwaj zaookrąglenia dolne lewe i prawe u rodzica i cyk kurwa zrobione, a nie sie pierdolisz z tym gownem tyle czasu.
+    &:hover &__live {
+        visibility: visible;
+        opacity: 1;
+    }
+}

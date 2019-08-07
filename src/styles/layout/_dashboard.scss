@@ -1,5 +1,5 @@
 .dashboard {
-    margin-top: 7.2rem; // Header height
+    padding-top: 7.2rem; // Header height
     background: linear-gradient(90deg, var(--color-blue-4) 50%,#fff 0);
     overflow: hidden;
 
@@ -21,7 +21,7 @@
         }
         // 1200
         @include media(75em) {
-            background: url('./../../images/dashboard-min.png') no-repeat;
+            background: url('./../../public/images/dashboard-min.png') no-repeat;
             background-position: right 45%;
             background-size: 60%;
             padding: 6rem 3rem;

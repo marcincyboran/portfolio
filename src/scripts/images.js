@@ -1,8 +1,8 @@
-import './../../images/favicon.ico';
-import './../../images/dashboard-min.png';
-import './../../images/design-min.png';
-import './../../images/code-min.png';
-import './../../images/enjoy-min.png';
-import './../../images/contact-min.png';
-import './../../images/tnt@2x-min.png';
-import './../../images/tnt-min.png';
+// import './../../public/images/favicon.ico';
+// import './../../public/images/dashboard-min.png';
+// import './../../public/images/design-min.png';
+// import './../../public/images/code-min.png';
+// import './../../public/images/enjoy-min.png';
+// import './../../public/images/contact-min.png';
+// import './../../public/images/tnt@2x-min.png';
+// import './../../public/images/tnt-min.png';
