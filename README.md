@@ -11,7 +11,7 @@ Clone this repo
 git clone <repo>
 ```
 
-Install all dependences
+Install all dependencies
 ```
 npm install
 ```
